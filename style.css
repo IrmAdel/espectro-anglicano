@@ -1,0 +1,22 @@
+:root{--bg:#faf7f2;--card:#fff;--tx:#2a2420;--mu:#7a6f66;--bd:#e3dbd0;--ac:#5b2a86;--c:#b3261e;--l:#2e8b57;--p:#1f5fbf;
+box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#181514;--card:#231f1d;--tx:#f0e9e1;--mu:#a89d93;--bd:#3a332f;--ac:#b98ae0;--c:#ff6b61;--l:#5ed195;--p:#6fa3ff}}
+:root[data-theme="dark"]{--bg:#181514;--card:#231f1d;--tx:#f0e9e1;--mu:#a89d93;--bd:#3a332f;--ac:#b98ae0;--c:#ff6b61;--l:#5ed195;--p:#6fa3ff}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--tx);font:16px/1.5 Georgia,'Times New Roman',serif}
+main{max-width:720px;margin:0 auto;padding:20px 16px 48px}
+h1{font-size:1.7rem;margin:.2em 0;color:var(--ac)}h2{font-size:1.2rem;line-height:1.35}
+.card{background:var(--card);border:1px solid var(--bd);border-radius:14px;padding:20px;margin-top:16px}
+.mu{color:var(--mu);font-size:.9rem}
+label{display:block;margin:12px 0 4px;font-weight:bold}
+input{width:100%;padding:12px;border:1px solid var(--bd);border-radius:10px;background:var(--bg);color:var(--tx);font:inherit}
+button{font:inherit;cursor:pointer;border-radius:10px;border:1px solid var(--ac);background:var(--ac);color:#fff;padding:12px 20px;margin-top:16px}
+button.sec{background:transparent;color:var(--ac)}button:disabled{opacity:.4;cursor:default}
+.opt{display:block;width:100%;text-align:left;background:var(--bg);color:var(--tx);border:1px solid var(--bd);margin:8px 0 0;padding:12px 14px}
+.opt:hover{border-color:var(--ac)}.opt.sel{border-color:var(--ac);background:color-mix(in srgb,var(--ac) 14%,var(--bg))}
+.bar{height:10px;background:var(--bd);border-radius:6px;overflow:hidden;margin-top:14px}.bar i{display:block;height:100%;background:var(--ac);transition:width .3s}
+.row{display:flex;align-items:center;gap:10px;margin:8px 0}.row b{width:110px}.row .bar{flex:1;margin:0}
+.nav{display:flex;justify-content:space-between}
+.sc{overflow-x:auto}table{border-collapse:collapse;width:100%;font-size:.9rem;min-width:480px}
+th,td{padding:6px 8px;border-bottom:1px solid var(--bd);text-align:left}
+.hide{display:none}svg{width:100%;height:auto;display:block}svg text{fill:var(--tx);font-family:inherit}

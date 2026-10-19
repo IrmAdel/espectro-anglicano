@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Teste Teológico – IEAB</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<main>
+<h1>Teste Teológico</h1>
+<p class="mu">Onde você está entre o Católico, o Liberal e o Protestante? · Igreja Episcopal Anglicana do Brasil</p>
+
+<section id="s0" class="card">
+  <label for="nome">Seu nome</label><input id="nome" autocomplete="name">
+  <label for="par">Sua paróquia da IEAB</label><input id="par">
+  <button id="ini" disabled>Começar o teste</button>
+</section>
+
+<section id="s1" class="card hide">
+  <div class="mu" id="prog"></div><div class="bar"><i id="pb"></i></div>
+  <h2 id="q"></h2><div id="opts"></div>
+  <div class="nav"><button class="sec" id="volta">← Voltar</button><button id="prox" disabled>Próxima →</button></div>
+</section>
+
+<section id="s2" class="hide">
+  <div class="card"><h2 id="rt"></h2><div id="bars"></div></div>
+  <div class="card"><h2>Mapa de todos os participantes</h2>
+    <p class="mu">Quanto mais perto de um vértice, mais você se identifica com aquele eixo. A sua posição está destacada.</p>
+    <div id="chart"></div></div>
+  <div class="card"><h2>Resultados</h2><div class="sc"><table id="tb"></table></div>
+    <p class="mu" id="aviso"></p></div>
+  <button class="sec" onclick="location.reload()">Refazer o teste</button>
+</section>
+</main>
+<script src="config.js"></script>
+<script src="script.js"></script>
+</body>
+</html>
